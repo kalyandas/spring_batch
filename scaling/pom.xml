@@ -11,6 +11,7 @@
         <module>multiThreading</module>
         <module>localPartitioning</module>
         <module>asyncIPIW</module>
+        <module>remotePartitioning</module>
     </modules>
     <packaging>pom</packaging>
     <parent>
