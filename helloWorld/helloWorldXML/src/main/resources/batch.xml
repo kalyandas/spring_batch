@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/batch"
+             xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/batch
+http://www.springframework.org/schema/batch/spring-batch-3.0.xsd">
+
+    <beans:import resource="context.xml" />
+
+    <beans:bean id="step1Tasklet" class="com.example.batch.helloworld.HelloWorldXMLTasklet"></beans:bean>
+        <!--
+    <step id="step1">
+        <tasklet ref="step1Tasklet"></tasklet>
+    </step>
+    -->
+    <job id="helloWorldJob">
+        <!--
+        <step id="stepOne" parent="step1"/>
+        -->
+        <step id="step1">
+            <tasklet ref="step1Tasklet">
+            </tasklet>
+        </step>
+    </job>
+</beans:beans>
