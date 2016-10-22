@@ -12,6 +12,7 @@
         <module>localPartitioning</module>
         <module>asyncIPIW</module>
         <module>remotePartitioning</module>
+        <module>remoteChunking</module>
     </modules>
     <packaging>pom</packaging>
     <parent>
