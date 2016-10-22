@@ -10,6 +10,7 @@
     <modules>
         <module>multiThreading</module>
         <module>localPartitioning</module>
+        <module>asyncIPIW</module>
     </modules>
     <packaging>pom</packaging>
     <parent>

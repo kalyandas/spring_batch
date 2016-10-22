@@ -17,9 +17,3 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-
-helloWorldJava
-scaling/remotePartitioning
-scaling/localPartitioning
-scaling/remotePartitioning
-scaling/asyncIPIW
